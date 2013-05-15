@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.robwid.uppgiftsbanken"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+        
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="9" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.robwid.uppgiftsbanken.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.robwid.uppgiftsbanken.TaskActivity"
+            android:label="@string/title_activity_task" >
+        </activity>
+        <activity
+            android:name="com.robwid.uppgiftsbanken.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.robwid.uppgiftsbanken.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="com.robwid.uppgiftsbanken.EmployerActivity"
+            android:label="@string/title_activity_employer" >
+        </activity>
+        <activity
+            android:name="com.robwid.uppgiftsbanken.AdministerTaskActivity"
+            android:label="@string/title_activity_administer_task" >
+        </activity>
+        <activity
+            android:name="com.robwid.uppgiftsbanken.StudentActivity"
+            android:label="@string/title_activity_student" >
+        </activity>
+    </application>
+
+</manifest>
